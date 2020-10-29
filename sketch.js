@@ -75,3 +75,12 @@ function mouseDragged(){
 function mouseReleased(){
     slingshot.fly();
 }
+
+function keyPressed(){
+    // ascii code for the space is 32
+    if(keyCode===32){
+        // the bird is being attached to the constraint again
+        slingshot.attach(bird.body);
+
+    }
+}
